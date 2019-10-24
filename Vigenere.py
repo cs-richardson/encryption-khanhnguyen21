@@ -53,7 +53,7 @@ else:
         while(i < len(KEY)):
             try:
                 y = KEY[i]
-                letter = ord(userInput[:1])
+                letter = ord(userInput[0])
             except:
                 break
             userInput = userInput[1:]
