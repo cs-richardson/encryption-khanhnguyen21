@@ -11,8 +11,7 @@ checkNonLetter = False
 #Check if key only contains alphabetical chacracters
 for x in range (len(KEY)):
     letter = newKEY[x]
-    letterNum = ord(letter)
-    if letterNum < 65 or letterNum > 90 and letterNum < 97 or letterNum > 121:
+    if letter.isdigit() == True:
         checkNonLetter = True
         
 if checkNonLetter == True or len(KEY) == 0:
