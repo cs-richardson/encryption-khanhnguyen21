@@ -12,8 +12,7 @@ checkNonLetter = False
 for x in range (len(KEY)):
     letter = newKEY[x]
     letterNum = ord(letter)
-    if letterNum < 65 and letterNum > 90 or letterNum < 97 and letterNum > 121 \
-       or letter == ' ' or letter.isdigit() == True:
+    if letterNum < 65 or letterNum > 90 and letterNum < 97 or letterNum > 121:
         checkNonLetter = True
         
 if checkNonLetter == True or len(KEY) == 0:
